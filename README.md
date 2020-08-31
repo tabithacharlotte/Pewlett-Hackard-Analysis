@@ -19,13 +19,13 @@ The purpose of this project is to determine the number of retiring employees by 
 
   The counts of employees leaving for each position indicate where the company should focus its mentorship efforts.
 
-   ![titles of retirees](TitlesofRetirees.PNG)
+   ![titles of retirees](Photos/TitlesofRetirees.PNG)
 
 - Within about the next 3 years, 72,458 employees will be eligible for retirement.
 - Looking at the results from a query written and executed to identify the employees eligible for the mentorship program, we can see that 1,549 employees are eligible for mentorship, not nearly enough to fill all the roles eligible for retirement.
 - As the table below reveals, a count of the mentorship-eligible employees by title shows that the majority of employees who are mentorship-eligible fall into the role of Senior Staff, Engineer, Senior Engineer, Staff, Technique Leader and then Assistant Engineer, respectively.
   
-  ![titles of mentorship-eligible employees](MentorshipTitles.PNG)
+  ![titles of mentorship-eligible employees](Photos/MentorshipTitles.PNG)
 
 
 ## Summary
@@ -36,18 +36,18 @@ The purpose of this project is to determine the number of retiring employees by 
   
    Count of titles of mentorship-eligible employees
 
-    ![titles of mentorship-eligible employees](MentorshipTitles.PNG)
+    ![titles of mentorship-eligible employees](Photos/MentorshipTitles.PNG)
 
     Count of titles of retirees
 
-    ![titles of retirees](TitlesofRetirees.PNG)
+    ![titles of retirees](Photos/TitlesofRetirees.PNG)
 -  After expanding the mentorship eligibility from those exclusively born in 1965 to those born between 1956 and 1960 (the birth date range of employees in our data) we can see that there are a lot more employees available to receive mentorship.
   If the company is worried about filling all the retiring roles, it should try and target the number of mentorship-eligible candidates to meet the need for after the "silver tsunami" hits. 
   
     I chose 1956 as the starting birth year because it falls after 1955, the year "retirement-ready" employees were born.
     
     Mentorship eligibility expanded birth years by department:
-  ![mentorship_expanded](MentorshipEligibilityExpanded.PNG)
+  ![mentorship_expanded](Photos/MentorshipEligibilityExpanded.PNG)
 
    Previous Mentorship eligibility (only those born in 1965) by department:
-  ![mentorship_1965](MentorshipEligibility.PNG)
+  ![mentorship_1965](Photos/MentorshipEligibility.PNG)
