@@ -108,4 +108,54 @@ WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31'AND de.to_date = ('9999
 ORDER BY e.emp_no ASC;
 
 SELECT * FROM mentorship_eligibility;
+
+-- count up roles eligible for mentorship
+SELECT COUNT(me.title), me.title
+FROM mentorship_eligibility as me
+GROUP BY me.title
+ORDER BY me.count DESC;
+
+-- birth years of people in the data set
+SELECT COUNT(*), EXTRACT(YEAR FROM e.birth_date)
+FROM employees as e
+GROUP BY EXTRACT(YEAR FROM e.birth_date)
+ORDER BY EXTRACT(YEAR FROM e.birth_date) ASC;
+
+--mentorship-eligibility table expanded years
+SELECT DISTINCT ON (emp_no)
+	e.emp_no, 
+	e.first_name, 
+	e.last_name,
+	e.birth_date,
+	de.from_date,
+	de.to_date,
+	ti.title
+INTO mentorship_eligibility_expanded
+FROM employees as e
+INNER JOIN titles as ti
+			INNER JOIN depart_employees as de
+			ON (ti.emp_no = de.emp_no)
+	ON (e.emp_no = ti.emp_no)
+WHERE (e.birth_date BETWEEN '1956-01-01' AND '1965-12-31'AND de.to_date = ('9999-01-01'))
+ORDER BY e.emp_no ASC;
+
+-- Mentorship eligibiltiy employee count by department 
+SELECT COUNT(me.emp_no), de.dept_no, d.dept_name
+FROM mentorship_eligibility as me
+INNER JOIN depart_employees as de
+	ON (me.emp_no = de.emp_no)
+	INNER JOIN departments as d
+	ON (d.dept_no = de.dept_no)
+GROUP BY de.dept_no, d.dept_name
+ORDER BY de.dept_no;
+
+-- Mentorship Expanded Eligibility employee count by department number create table
+SELECT COUNT(mee.emp_no), de.dept_no, d.dept_name
+FROM mentorship_eligibility_expanded as mee
+INNER JOIN depart_employees as de
+	ON (mee.emp_no = de.emp_no)
+	INNER JOIN departments as d
+	ON (d.dept_no = de.dept_no)
+GROUP BY de.dept_no, d.dept_name
+ORDER BY de.dept_no;
 	
