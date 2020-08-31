@@ -2,7 +2,7 @@
 
 ## Overview of Project
 
-The Pewlett-Hackard company noticed that it had an aging population and wanted to ensure that rising employees received training and knowledge from more experienced employees, before those employees retired.
+The Pewlett-Hackard company noticed that it had an aging population and wanted to ensure rising employees received adequate training and knowledge from more experienced employees before they retired.
 
 ### Purpose
 
@@ -32,16 +32,16 @@ The purpose of this project is to determine the number of retiring employees by 
 
 - As the "silver tsunami" begins to make an impact, 72,458 roles will need to be filled. 
 - As for whether there are enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett-Hackard employees, the answer, based off our results, is yes. However, there are far more employees who are retirement-ready than mentorship-eligible which could pose a problem when the "silver tsunami" hits.
--  An additional query I ran, counting up the total mentorship-eligible employees by title shows that the company will need more engineers to fill Senior Engineer positions as well as other roles listed in the company. One way the company might identify more individuals to fill the positions of retiring employees is to expand our criteria of mentorship-eligible employees.
+-  An additional query I ran, counting up the mentorship-eligible employees by title shows that the company will need more engineers to fill Senior Engineer positions as well as other roles listed in the company. One way the company might identify more individuals to fill the positions of retiring employees is to expand criteria of mentorship-eligible employees.
   
-   Count of titles of mentorship-eligible employees
+   Count of titles of mentorship-eligible employees:
 
     ![titles of mentorship-eligible employees](Photos/MentorshipTitles.PNG)
 
-    Count of titles of retirees
+    Count of titles of retirees:
 
     ![titles of retirees](Photos/TitlesofRetirees.PNG)
--  After expanding the mentorship eligibility from those exclusively born in 1965 to those born between 1956 and 1960 (the birth date range of employees in our data) we can see that there are a lot more employees available to receive mentorship.
+-  After expanding the mentorship eligibility from those exclusively born in 1965 to those born between 1956 and 1965 (the birth date range of employees in our data) we can see that there are a lot more employees available to receive mentorship.
   If the company is worried about filling all the retiring roles, it should try and target the number of mentorship-eligible candidates to meet the need for after the "silver tsunami" hits. 
   
     I chose 1956 as the starting birth year because it falls after 1955, the year "retirement-ready" employees were born.
